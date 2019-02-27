@@ -44,7 +44,7 @@
             app:boxBackgroundColor="@color/backgroung_white_welcome"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:textColorHint="@color/backgroung_white"
             android:layout_marginStart="10dp">
         <EditText
@@ -61,7 +61,7 @@
             app:boxBackgroundColor="@color/backgroung_white_welcome"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
         <EditText
                 android:id="@+id/txt_surname"
                 android:layout_width="match_parent"
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:textColorHint="@color/backgroung_white"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
         <EditText
                 android:id="@+id/txt_email"
                 android:layout_width="match_parent"
@@ -95,7 +95,7 @@
             app:boxBackgroundColor="@color/backgroung_white_welcome"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
 
         <EditText
                 android:id="@+id/txt_r_password"

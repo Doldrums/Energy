@@ -7,65 +7,90 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:orientation="vertical"
+        android:background="@color/black"
 >
 
-    <ImageView android:layout_width="182dp"
-               android:layout_height="166dp"
-               android:src="@drawable/welcome"
-               android:layout_gravity="center_horizontal"
-               android:layout_marginTop="40dp"
-               tools:ignore="ContentDescription"/>
-    <android.support.design.widget.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-    >
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="288dp"
+               android:layout_gravity="top"
+               android:src="@drawable/asdfghjkl"/>
+    <android.support.v7.widget.CardView android:layout_width="wrap_content"
+                                        app:cardBackgroundColor="@color/black"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
 
-        <EditText
-                android:id="@+id/txt_login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Телефон"
-                android:inputType="phone"
-                tools:ignore="Autofill"/>
+            <TextView android:layout_width="match_parent"
+                      android:text="Добро Пожаловать"
+                      android:textColor="@color/white"
+                      style="@style/Base.TextAppearance.AppCompat.Title"
+                      android:textAllCaps="true"
+                      android:textAlignment="center"
+                      android:layout_marginTop="10dp"
+                      android:layout_height="wrap_content"/>
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:boxBackgroundColor="@color/backgroung_white_welcome"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:textColorHint="@color/white"
+                    android:layout_gravity="center_horizontal"
+            >
 
-    </android.support.design.widget.TextInputLayout>
+                <EditText
+                        android:id="@+id/txt_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Телефон"
+                        android:textColor="@color/white"
+                        android:inputType="phone"
+                        tools:ignore="Autofill"/>
 
-    <android.support.design.widget.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:passwordToggleEnabled="true"
-            android:layout_gravity="center_horizontal">
+            </android.support.design.widget.TextInputLayout>
 
-        <EditText
-                android:id="@+id/txt_password"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Пароль"
-                android:inputType="textPassword"
-                tools:ignore="Autofill"/>
+            <android.support.design.widget.TextInputLayout
 
-    </android.support.design.widget.TextInputLayout>
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:textColorHint="@color/white"
+                    app:boxBackgroundColor="@color/backgroung_white_welcome"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:passwordToggleTintMode="screen"
+                    app:passwordToggleEnabled="true"
+                    android:layout_gravity="center_horizontal">
 
-    <Button
-            android:text="Don't have an account? Register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_register"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
-    <Button
-            android:text="login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_login"
-            android:layout_gravity="center_horizontal"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+                <EditText
+                        android:id="@+id/txt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Пароль"
+                        style="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/white"
+                        android:inputType="textPassword"
+                        tools:ignore="Autofill"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                    android:text="Войти"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_login"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+            <Button
+                    android:text="Еще нет аккаунта? Регистрация"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_register"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 
 </LinearLayout>

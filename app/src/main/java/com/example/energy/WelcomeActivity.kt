@@ -31,6 +31,10 @@ class WelcomeActivity : AppCompatActivity() {
                 password != "404" || login != "test" -> Snackbar.make(it,"Неверный пароль или логин",Snackbar.LENGTH_LONG).show()
             }
         }
+        btn_register.setOnClickListener {
+            intent = Intent(this,RegisterActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

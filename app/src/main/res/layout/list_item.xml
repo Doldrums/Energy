@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="430dp"
+              android:orientation="vertical"
+              android:background="@color/backgroung"
+>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:layout_height="400dp"
+                  android:layout_margin="10dp"
+                  android:layout_marginTop="20dp"
+                  android:paddingTop="8dp"
+                  android:paddingBottom="8dp"
+                  android:paddingStart="16dp"
+                  android:paddingEnd="16dp"
+                  android:gravity="center_vertical"
+                  android:orientation="vertical"
+                  android:background="@color/white"
+    >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="239dp"
+                app:srcCompat="@drawable/chat"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView"
+                tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:text="@string/example_date"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:text="@string/example_title"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:id="@+id/name"
+                android:textColor="@color/black"/>
+
+        <TextView
+                android:text="@string/example_text"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/discription"
+        />
+
+    </LinearLayout>
+</LinearLayout>

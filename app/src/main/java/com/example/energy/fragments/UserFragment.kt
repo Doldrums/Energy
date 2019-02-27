@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.energy.R
+import kotlinx.android.synthetic.main.fragment_user.*
 
 
 class UserFragment : Fragment() {

@@ -2,11 +2,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="@dimen/spacing">
+        android:orientation="vertical">
 
     <TextView
-            android:id="@+id/username"
+            android:id="@+id/txt_user"
+            android:text="Пользователь"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
             style="?android:textAppearanceMedium"
             android:textColor="?android:textColorPrimary"
             android:layout_width="wrap_content"
@@ -14,13 +16,14 @@
             android:singleLine="false"
             android:textStyle="bold"/>
     <TextView
-            android:id="@+id/message"
+            android:id="@+id/txt_messages"
+            android:text="Сообщение"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
             style="?android:textAppearanceMedium"
             android:textColor="?android:textColorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/spacing"
-            android:paddingRight="@dimen/spacing"
             android:singleLine="true"/>
 
 </LinearLayout>

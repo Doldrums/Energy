@@ -17,8 +17,6 @@ import kotlinx.android.synthetic.main.fragment_user.*
 
 class NewsFragment : Fragment() {
 
-    var title : String = "test"
-    var description : String = "test"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

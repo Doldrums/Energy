@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+        <TextView android:layout_width="wrap_content"
+                  android:text="Плановое отключение"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginTop="10dp"
+                  style="@style/Base.TextAppearance.AppCompat.Title"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="27.02.19"
+                  android:layout_marginStart="10dp"
+                  android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="Внимание всех пользователей, проживающих на Переулке Майского, на этой неделе будет произведено запланированное отключение услуг, не забудьте!"
+                      style="@style/Base.TextAppearance.AppCompat.Body1"
+                      android:layout_marginStart="10dp"
+                      android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

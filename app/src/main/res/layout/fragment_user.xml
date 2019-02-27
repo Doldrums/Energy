@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            >
 <LinearLayout android:layout_width="match_parent"
               android:orientation="vertical"
               android:background="@color/white"
-              android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+              android:layout_height="match_parent" >
+
+
 
 
         <FrameLayout android:layout_width="match_parent"
@@ -34,11 +39,21 @@
                        android:id="@+id/notification"
                        android:layout_marginEnd="5dp"
                        android:src="@drawable/ic_notifications_none_black_24dp"
-                       android:layout_height="35dp"/>
+                       android:layout_height="35dp" android:focusable="true"/>
 
         </FrameLayout>
+
+    <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/graph" />
+
+    <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/graph1" />
 
     </LinearLayout>
 
 
-
+</ScrollView>

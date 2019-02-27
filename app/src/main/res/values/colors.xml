@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#77c3d1</color>
-    <color name="colorPrimaryDark">#6a4b6d</color>
-    <color name="colorAccent">#77c3d1</color>
-    <color name="white">#ffffff</color>
-    <color name="purple">#6a4b6d</color>
-    <color name="blue">#77c3d1</color>
-    <color name="pink">#f35c8c</color>
-    <color name="green">#008577</color>
-    <color name="black">#000000</color>
-    <color name="backgroung">#e9ebef</color>
-    <color name="backgroung_white">#80FFFFFF</color>
+
     <color name="backgroung_black">#99000000</color>
     <color name="backgroung_white_welcome">#1AFFFFFF</color>
+
+
+
+    <color name="username0">#e21400</color>
+    <color name="username1">#91580f</color>
+    <color name="username2">#f8a700</color>
+    <color name="username3">#f78b00</color>
+    <color name="username4">#58dc00</color>
+    <color name="username5">#287b00</color>
+    <color name="username6">#a8f07a</color>
+    <color name="username7">#4ae8c4</color>
+    <color name="username8">#3b88eb</color>
+    <color name="username9">#3824aa</color>
+    <color name="username10">#a700ff</color>
+    <color name="username11">#d300e7</color>
+
+
 </resources>

@@ -1,6 +1,7 @@
 package com.example.energy.fragments
 
 
+import android.app.AlertDialog
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -83,6 +84,24 @@ class UserFragment : Fragment() {
         series.spacing = 50
         series.isDrawValuesOnTop = true
         series.valuesOnTopColor = Color.RED
+
+
+        notification.setOnClickListener {
+            val builder = AlertDialog.Builder(activity)
+            builder .setTitle("Объявления")
+                .setView(R.layout.dialog_view)
+
+
+
+
+            builder.setPositiveButton("Хорошо"){dialog, which ->
+            }
+
+            val dialog: AlertDialog = builder.create()
+            dialog.show()
+
+
+        }
 
 
     }

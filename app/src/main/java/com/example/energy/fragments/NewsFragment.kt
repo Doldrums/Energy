@@ -1,5 +1,6 @@
 package com.example.energy.fragments
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -8,9 +9,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 
 import com.example.energy.R
 import kotlinx.android.synthetic.main.content_scrolling.*
+import kotlinx.android.synthetic.main.fragment_user.*
 
 class NewsFragment : Fragment() {
 
@@ -40,6 +43,8 @@ class NewsFragment : Fragment() {
 
         my_recycler_view.layoutManager = LinearLayoutManager(activity!!.applicationContext)
         my_recycler_view.adapter = Adapter(name, 1)
+
+
     }
 
     companion object {

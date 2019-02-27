@@ -11,4 +11,6 @@
     <color name="black">#000000</color>
     <color name="backgroung">#e9ebef</color>
     <color name="backgroung_white">#80FFFFFF</color>
+    <color name="backgroung_black">#99000000</color>
+    <color name="backgroung_white_welcome">#1AFFFFFF</color>
 </resources>

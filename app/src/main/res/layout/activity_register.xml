@@ -2,32 +2,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:id="@+id/activity_sign_up"
+              android:background="@drawable/background_signup"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+    <android.support.v7.widget.CardView android:layout_width="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:cardCornerRadius="30dp"
+                                        app:cardBackgroundColor="@color/backgroung_black"
+                                        android:layout_marginTop="30dp"
+                                        android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:textSize="12pt"
+            android:textColor="@color/white"
             style="@style/Base.TextAppearance.AppCompat.Title"
             android:layout_marginStart="10dp"
             android:text="Здравствуй!"/>
 
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textSize="14dp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
             android:layout_marginStart="10dp"
-            android:text="создай свой личный аккаунт чтобы продолжить"/>
+            android:text="создай свой личный аккаунт в системе для продолжения работы"/>
 
     <android.support.design.widget.TextInputLayout
             android:id="@+id/inputLayout1"
-            android:layout_width="match_parent"
+            android:layout_width="290dp"
+            app:boxBackgroundColor="@color/backgroung_white_welcome"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/backgroung_white"
             android:layout_marginStart="10dp">
         <EditText
                 android:id="@+id/txt_name"
@@ -37,8 +55,10 @@
                 android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="290dp"
+            android:textColorHint="@color/backgroung_white"
+            app:boxBackgroundColor="@color/backgroung_white_welcome"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp">
@@ -50,33 +70,13 @@
                 android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
-    <RadioGroup
-            android:id="@+id/radioGender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp">
-
-        <RadioButton
-                android:id="@+id/radioMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Мужчина"
-                android:paddingEnd="10dp"/>
-
-        <RadioButton
-                android:id="@+id/radioFemale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Женщина" />
-    </RadioGroup>
-
     <android.support.design.widget.TextInputLayout
             android:id="@+id/inputLayout2"
-            android:layout_width="match_parent"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="290dp"
+            app:boxBackgroundColor="@color/backgroung_white_welcome"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/backgroung_white"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp">
         <EditText
@@ -90,7 +90,9 @@
     <android.support.design.widget.TextInputLayout
             android:id="@+id/inputLayout3"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            android:layout_width="match_parent"
+            android:layout_width="290dp"
+            android:textColorHint="@color/backgroung_white"
+            app:boxBackgroundColor="@color/backgroung_white_welcome"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp">
@@ -109,9 +111,9 @@
     <Button
             android:id="@+id/btn_signup"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:text="Зарегистрироваться"
     />
@@ -120,8 +122,9 @@
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
 
 
         <TextView
@@ -129,6 +132,7 @@
                 android:layout_height="wrap_content"
                 android:text="Уже есть профиль?"
                 android:textSize="14dp"
+                android:textColor="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"/>
 
@@ -138,8 +142,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Войти"
-                android:textColor="@color/colorAccent"
                 android:textStyle="italic"
+                android:textColor="@color/white"
                 android:gravity="bottom"
                 android:clickable="true"
                 android:layout_marginStart="10dp"
@@ -147,4 +151,6 @@
 
 
     </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.example.energy.fragments
 
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -10,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.energy.R
+import com.example.energy.WelcomeActivity
 import kotlinx.android.synthetic.main.fragment_user.*
 
 import com.jjoe64.graphview.series.DataPoint
@@ -88,7 +90,7 @@ class UserFragment : Fragment() {
 
         notification.setOnClickListener {
             val builder = AlertDialog.Builder(activity)
-            builder .setTitle("Объявления")
+            builder
                 .setView(R.layout.dialog_view)
 
 
@@ -101,6 +103,11 @@ class UserFragment : Fragment() {
             dialog.show()
 
 
+        }
+
+        exit.setOnClickListener {
+            var intent = Intent(activity, WelcomeActivity::class.java)
+            startActivity(intent)
         }
 
 

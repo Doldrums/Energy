@@ -46,6 +46,12 @@ class ChatFragment : Fragment() {
             when {
                 message != "" -> {
                     messages.add(txt_message.text.toString())
+                    if(txt_message.text.toString() == "Добрый день! Подскажите пожалуйста, в какое время работает ваш офис в Калининграде?")
+                    {
+                        txt_otvet.visibility = View.VISIBLE
+                        otvet.visibility = View.VISIBLE
+
+                    }
                     recycler_messages.layoutManager = LinearLayoutManager(activity!!.applicationContext)
                     recycler_messages.adapter = Adapter(messages)
                 }

@@ -20,8 +20,8 @@
     <string name="example_date">20.01.2019 20:47</string>
     <string name="example_title">Christmas Cakes</string>
     <string name="example_title_1">Notification</string>
-    <string name="example_text">Such cakes conquer not only with their taste, but also with the decoration process, to which you can attract the whole family, including the youngest children.</string>
-
+    <string name="example_text">Новость с официального сайта сетевой компании. Нажмите для просмотра подробностей.
+    </string>
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -116,4 +116,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_sdfghjkl">sdfghjkl</string>
+    <string name="title_activity_whatisit">whatisit</string>
 </resources>

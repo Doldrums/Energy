@@ -15,6 +15,8 @@
     <color name="black">#000000</color>
     <color name="backgroung">#e9ebef</color>
     <color name="backgroung_white">#80FFFFFF</color>
+    <color name="background_message">#9998A3EC</color>
+    <color name="background_otvet">#80AFF1CB</color>
 
 
     <color name="username0">#e21400</color>

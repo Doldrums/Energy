@@ -50,6 +50,7 @@
         <EditText
                 android:id="@+id/txt_name"
                 android:layout_width="match_parent"
+                android:textColor="@color/white"
                 android:layout_height="wrap_content"
                 android:hint="Имя"
                 android:inputType="text" />
@@ -64,6 +65,7 @@
             android:layout_marginTop="5dp">
         <EditText
                 android:id="@+id/txt_surname"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Фамилия"
@@ -81,6 +83,7 @@
             android:layout_marginTop="5dp">
         <EditText
                 android:id="@+id/txt_email"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Электронная почта"
@@ -99,6 +102,7 @@
 
         <EditText
                 android:id="@+id/txt_r_password"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Пароль"
